@@ -24,7 +24,8 @@ $(document).ready(function(){
             taskList.append(li);
             taskInput.val("").focus();
             saveData();
-        } else {
+        } 
+        else {
             alert("Enter a task");
         }
     }
@@ -41,9 +42,10 @@ $(document).ready(function(){
             taskList.append(li); 
             taskInput.val("").focus();
             saveData();
-        } else {
-            alert("Enter a task");
-        }
+        } 
+        // else {
+        //     alert("Enter a task");
+        // }
     });
 
     taskList.on("click", ".delete, .checkbox", function(event) {
