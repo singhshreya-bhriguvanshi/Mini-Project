@@ -30,24 +30,6 @@ $(document).ready(function(){
         }
     }
 
-    addTask.on("click", function() {
-        const taskText = taskInput.val().trim();
-        if (taskText !== "") {
-            const li = $("<li></li>").html(`
-                <input type="checkbox" class="checkbox">
-                <span>${taskText}</span>
-                <button class="delete">x</button>
-            `);
-
-            taskList.append(li); 
-            taskInput.val("").focus();
-            saveData();
-        } 
-        // else {
-        //     alert("Enter a task");
-        // }
-    });
-
     taskList.on("click", ".delete, .checkbox", function(event) {
         const target = $(event.target);
         if (target.hasClass("delete")) {
