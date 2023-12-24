@@ -8,6 +8,18 @@
     <!-- <link rel="stylesheet" href="./stylesToDo.css" /> -->
     <!-- <link rel="stylesheet" href="stylesTime.css" /> -->
     <!-- <link rel="stylesheet" href="stylesIcon.css" /> -->
+    <!-- weather links -->
+    <!-- <link rel="stylesheet" href=".\stylesWeather.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -71,6 +83,48 @@
         <h2 id="ampm"></h2>
       </div>
     </div>
+
+    <!-- Weather -->
+    <div class="weather-card">
+    <div class="weather">
+      <h1>WEATHER</h1>
+      <div class="search">
+        <div class="input-box">
+          <i class="bx bxs-map"></i>
+          <input type="text" placeholder="Enter city name" spellcheck="false" />
+        </div>
+        <button><i class="fa fa-search"></i></button>
+      </div>
+      <div class="error">
+        <p>Invalid city name</p>
+      </div>
+      <div class="weather1">
+        <div class="city">New York</div>
+        <div class="weather2">
+          <h1 class="temp"></h1>
+          <h2 class="description"></h2>
+        </div>
+        <div class="details">
+          <div class="col">
+            <i class="bx bx-water"></i>
+            <div>
+              <p class="humidity"></p>
+              <p class="humidity-info">Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <i class="bx bx-wind"></i>
+            <div>
+              <p class="wind"></p>
+              <p class="wind-info">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="scriptWeather.js"></script>
+
     <!-- LINKS -->
     <div class="wrapper">
       <div class="icon facebook">
@@ -106,5 +160,3 @@
     </div>
   </body>
 </html>
-
-

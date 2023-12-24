@@ -46,10 +46,9 @@ body{
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.1);
   backdrop-filter: blur(20px) ;
-
   margin: 30px;
   position: absolute;
-  bottom: 40px;
+  bottom: 8px;
   display: inline-block;
   width: 200px;
   /* background: #fff; */
@@ -275,7 +274,7 @@ button.delete{
 
 
 button:hover{
-  background-color:rgba(158, 200, 185,0.7);  
+  background-color:rgba(101, 105, 138, 0.5); 
 }
 
 .center{
@@ -343,3 +342,186 @@ button:hover{
   /* margin: 0 10px; */
 
 }
+
+/* weather css */
+.weather-card{
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px) ;
+  position: absolute;
+  top: 300px;
+  /* bottom: 8px; */
+  right:0px;
+  margin: 30px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.weather{
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  text-align: center;
+  color: white;
+}
+
+.weather1{
+  display: none;
+}
+
+.weather h1{
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.search{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.input-box i{
+  flex: 0.1;
+  font-size: 16px;
+  padding:3px 5px 3px 5px;
+  width: 5px;
+  align-items: center;
+
+}
+
+.search input{
+  flex: 1;
+  display: inline-block;
+  color: white;
+  outline: none;
+  text-transform: uppercase; 
+  border: none; 
+  background: transparent;
+  font-size: 14px;
+  align-items: center;
+  padding: 0;
+  border-radius: 0%;
+}
+
+.input-box{
+  flex: 1;
+  display: flex;
+  box-sizing: border-box; 
+  border: 1px solid #0f0f0f; 
+  background: transparent;
+  border-radius: 13px;
+  padding: 8px 10px 8px 1px;
+
+}
+
+
+.search button{
+  background: transparent;
+  color: rgba(255, 255, 255);
+  box-sizing: border-box;
+  padding: 12px 20px 12px 15px;
+  cursor: pointer;
+  border-radius: 13px;
+  right: 0;
+  font-size: 13px;
+ 
+}
+
+.search button:hover{
+  background-color:rgba(101, 105, 138, 0.5); 
+}
+
+.search input::placeholder{
+  text-transform: capitalize;
+  color: rgb(255, 255, 255,0.7);
+  font-size: 16px;
+}
+
+.details{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 35px;
+}
+
+.col i{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.weather2{
+  margin:0;
+  padding: 0;
+  font-size: x-small;
+  /* height: 80px; */
+}
+
+.city{
+  font-size: 30px;
+  align-items: center;
+}
+
+.temp{
+  display: inline-block;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  align-items: center;
+}
+
+.description{
+  display: inline;
+  align-items: right;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.details{
+  margin: auto;
+  padding-top: 20px;
+  font-size: small;
+}
+
+.humidity, .wind{
+  margin: auto;
+  padding-left: 3px;
+}
+
+.humidity-info, .wind-info{
+  margin: auto;
+  padding: 1px;
+}
+
+.details .col{
+  display: flex;
+  margin: auto;
+}
+
+.details .col i{
+  font-size: 45px;
+}
+
+.error{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* weather css ends*/
