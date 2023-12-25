@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const userName = localStorage.getItem('userName');
+  const usernameDisplay = document.getElementById('usernamedisplay');
+
+  if (userName) {
+      usernamedisplay.textContent = userName;
+  }
+});
+
+
 let date =new  Date();
 console.log(date)
 let month=date.getUTCMonth()
