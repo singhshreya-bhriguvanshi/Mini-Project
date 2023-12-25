@@ -26,5 +26,13 @@ if(min2<10)
 else{
   document.getElementById('timeMin').innerText=min2;
 }
+// let hour2=new Date().getHours();
+if(hour2<10)
+{
+  document.getElementById('timeHour').innerText="0"+hour2;
+}
+else{
+  hour2document.getElementById('timeHour').innerText=hour2;
+}
 }
 interval = setInterval(update,1000);
