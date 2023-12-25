@@ -28,6 +28,25 @@ body{
   
 
 }
+
+.watch_welcome{
+  display: flex;
+}
+
+.welcome{
+  flex: 1;
+  margin-top: 20px;
+  margin-left: 300px;
+  align-items: center;
+}
+
+.usernameDisplay, .usernamedisplay{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+
 .calendar1{
   /* margin-top: 100px; */
   display: flex;
