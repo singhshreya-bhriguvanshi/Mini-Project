@@ -41,7 +41,7 @@ html{
     font-size: larger;
 }
 
-.input-name{
+.input-name, .input-city{
     margin-top: 20px;
     margin-bottom: 20px;   
     display: flex;    
