@@ -1,10 +1,12 @@
 *{
+ 
   margin: 0;
   padding: 0;
   box-sizing:border-box;
   font-family: 'Times New Roman', Times, serif;
 }
 html{
+ 
   background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
   background-position: center;
   background-repeat: no-repeat;
@@ -15,6 +17,7 @@ html{
   /* -webkit-filter: blur(8px); */
 }
 body{
+  
   display: table-header-group;
   justify-content: top;
   align-items: center;
@@ -31,19 +34,26 @@ body{
 
 .watch_welcome{
   display: flex;
+ 
 }
 
 .welcome{
-  flex: 1;
-  margin-top: 20px;
-  margin-left: 300px;
+  position:absolute;
+  
+  /* flex: 1; */
+  /* top: 20px; */
+   margin-top: 20px; 
+  margin-left:37vw;
   align-items: center;
+  /* justify-content: center; */
 }
 
 .usernameDisplay, .usernamedisplay{
   color: white;
   text-align: center;
-  font-size: 60px;
+  font-size: 45px;
+  font-family: cursive;
+  font-weight: lighter;
 }
 
 
@@ -364,6 +374,7 @@ button:hover{
 #tZone{
   font-size: 3px;
 }
+/* Time css end here  */
 
 /* weather css */
 .weather-card{
@@ -548,3 +559,33 @@ button:hover{
 }
 
 /* weather css ends*/
+.SettingsOuter{
+  display: flex;
+}
+.Settings{
+  
+  position:relative;
+  text-align: center;
+background: rgba(255,255,255,0.05);
+box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+z-index: 1000;
+width: 300px;
+height: 100px;
+border: 1px solid rgba(255,255,255,0.1);
+backdrop-filter: blur(20px) ;
+margin-left: 77vw;
+bottom: 250px;
+/* margin-right: 20px; */
+/* margin: auto; */
+/* margin-top: 150px; */
+/* width: 400px; */
+border-radius: 13px;
+overflow: hidden;
+align-items: center;
+}
+#gear{
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* opacity: 0; */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="FullCal.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body  onload="renderDate()">
+    <div class="cross">
+      <button class="btn"><i class="fa fa-close"></i></button>
+    </div>
+    <div id="back">
+      <div id="main-cal">
+        <div class="top-cal">
+            <div class="prev" onclick="moveDate('prev')">
+                <span>&#10094</span>
+            </div>
+            <div class="mont">
+                <h2 id="mon-name">December</h2>
+                <p id="date_str" style="color:black"></p>
+            </div>
+            <div class="next" onclick="moveDate('next')">
+                <span>&#10095</span>
+            </div>
+        </div>
+        <div class="week">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>  
+        <div class="dayss">
+            
+        </div>
+      </div>
+    </div>
+    <script src="Ful-cal.js"></script>
+  </body>
+</html>
