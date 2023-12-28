@@ -365,10 +365,7 @@ button:hover {
   /* position: relative; */
   /* margin: 0 10px; */
 }
-<<<<<<< HEAD
-#tZone {
-  font-size: 3px;
-=======
+
 #tzone{
   display: flex;
   position: absolute;
@@ -376,7 +373,7 @@ button:hover {
   padding-bottom: 80px;
   
  
->>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
+
 }
 /* Time css end here  */
 
@@ -561,20 +558,17 @@ button:hover {
 }
 
 /* weather css ends*/
-<<<<<<< HEAD
-.SettingsOuter {
-  display: flex;
-}
+
 .Settings {
   position: relative;
-=======
+}
 .Options{
   display: flex;
 }
 .Options{
   
   position:relative;
->>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
+
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -599,7 +593,7 @@ button:hover {
   color: #fff;
   /* opacity: 0; */
 }
-<<<<<<< HEAD
+
 
 /* quotations */
 .card {
@@ -646,11 +640,11 @@ button:hover {
   color: #fff;
   justify-content: center;
 }
-=======
+
 #calc{
  
   align-items: center;
   justify-content: center;
   color: #fff;
 }
->>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
+

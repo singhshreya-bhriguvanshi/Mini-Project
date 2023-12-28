@@ -4,17 +4,19 @@ let time = new Date().toLocaleString("en-US", { timeZone: tz });
 let date1 = new Date(time);
 console.log(typeof (tz));
 console.log(tz);
-console.log(typeof(tz))
+// console.log(typeof(tz))
+
 
 function update() {
-<<<<<<< HEAD
-  document.getElementById("timeHour").innerHTML = new Date().getHours();
-  // document.getElementById("timeSec").innerHTML=new Date().getSeconds ();
-  document.getElementById("timeMin").innerHTML = new Date().getMinutes();
-  // console.log("Hello")
-  // setInterval(update,1000);
-  let hour2 = new Date().getHours();
-  let min2 = new Date().getMinutes();
+  document.getElementById("tzone").innerHTML=tz;
+  document.getElementById("timeHour").innerHTML = date1.getHours();
+  document.getElementById("timeMin").innerHTML = date1.getMinutes();
+  
+  
+  let hour2 = date1.getHours();
+  // console.log(hour2);
+  let min2 = date1.getMinutes();
+  // console.log(min2);
   // console.log(hour2);
   if (hour2 < 12) {
     // console.log("AM");
@@ -32,15 +34,10 @@ function update() {
   if (hour2 < 10) {
     document.getElementById("timeHour").innerText = "0" + hour2;
   } else {
-    hour2document.getElementById("timeHour").innerText = hour2;
+    document.getElementById("timeHour").innerText = hour2;
   }
-}
-=======
-  document.getElementById("tzone").innerHTML=tz;
-  document.getElementById("timeHour").innerHTML = date1.getHours();
-  document.getElementById("timeMin").innerHTML = date1.getMinutes();
-  let hour2 = date1.getHours();
-  let min2 = date1.getMinutes();
+
+
   if (hour2 < 12) {
 
     document.getElementById("ampm").innerText = ' AM';
@@ -65,5 +62,4 @@ function update() {
 }
 
 
->>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
 interval = setInterval(update, 1000);
