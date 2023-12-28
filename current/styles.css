@@ -25,7 +25,7 @@ body {
   align-items: center;
   min-height: 100vh;
   /* background: #666; */
-  background-image: url(boo-removebg-preview.png);
+  background-image: url(/images/boo-removebg-preview.png);
   background-position: center;
   background-repeat: no-repeat;
   background-position: 100vh 25vh;
@@ -338,7 +338,7 @@ button:hover {
 .clock {
   /* margin-top: 100px; */
   display: flex;
-  position: absolute;
+  /* position: absolute; */
 }
 .clock h2 {
   font-size: 3em;
@@ -359,11 +359,24 @@ button:hover {
   padding-top: 5px;
   align-items: center;
   justify-content: center;
+  /* font-size:large;
+  align-items:center; */
+  /* text-align: center; */
   /* position: relative; */
   /* margin: 0 10px; */
 }
+<<<<<<< HEAD
 #tZone {
   font-size: 3px;
+=======
+#tzone{
+  display: flex;
+  position: absolute;
+  padding-left: 144px;
+  padding-bottom: 80px;
+  
+ 
+>>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
 }
 /* Time css end here  */
 
@@ -548,11 +561,20 @@ button:hover {
 }
 
 /* weather css ends*/
+<<<<<<< HEAD
 .SettingsOuter {
   display: flex;
 }
 .Settings {
   position: relative;
+=======
+.Options{
+  display: flex;
+}
+.Options{
+  
+  position:relative;
+>>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -577,6 +599,7 @@ button:hover {
   color: #fff;
   /* opacity: 0; */
 }
+<<<<<<< HEAD
 
 /* quotations */
 .card {
@@ -623,3 +646,11 @@ button:hover {
   color: #fff;
   justify-content: center;
 }
+=======
+#calc{
+ 
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+>>>>>>> 66649246e4b5ab5c02970136310c7e4428c3fde6
