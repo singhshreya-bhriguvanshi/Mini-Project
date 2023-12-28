@@ -60,6 +60,4 @@ function update() {
     document.getElementById('timeHour').innerText = hour2;
   }
 }
-
-
 interval = setInterval(update, 1000);
