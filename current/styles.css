@@ -648,3 +648,75 @@ button:hover {
   color: #fff;
 }
 
+
+/* form style */
+.form-container{
+  align-items: center; 
+  margin: 200px 300px 200px 550px; 
+}
+
+.user-info{
+  text-align: center;
+background: rgba(255,255,255,0.05);
+box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+z-index: 1000;
+border: 1px solid rgba(255,255,255,0.1);
+backdrop-filter: blur(20px) ;
+/* margin: 300px; */
+width: 400px;
+border-radius: 13px;
+overflow: hidden;
+align-items: center;
+}
+
+.formbody{
+  align-items: center;
+  background-image: none;
+}
+
+.form-heading{
+  display: inline-block;
+  color: white;
+  font-size: 50px;
+}
+
+.username{
+  color: white;
+  /* flex: 1; */
+  /* display: inline-block; */
+  gap: 1px;
+  margin: 16px;
+  margin-left: 20px;
+  font-size: larger;
+}
+
+.input-name, .input-city{
+  margin-top: 20px;
+  margin-bottom: 20px;   
+  display: flex;    
+}
+
+#userName{
+  gap: 2px;
+  flex:1;
+  /* margin: 20px; */
+  margin-right: 30px;
+  box-sizing: border-box; 
+  border: 1px solid #0f0f0f;
+  color: white;
+  font-size: 16px; 
+  background: transparent;
+  border-radius: 13px;
+  padding: 12px 20px 12px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn{
+ background: transparent;
+ box-sizing: border-box;
+ padding: 12px 20px 12px 30px;
+ cursor: pointer;
+ margin: 20px;
+ border-radius: 13px;
+ color: white;
+}
