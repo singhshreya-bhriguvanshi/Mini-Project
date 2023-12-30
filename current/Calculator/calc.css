@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: fixed; */
+  background-image: blur(20px);
+}
+body {
+  font-family: "Rubik Doodle Shadow";
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calcu {
+  border: 6px solid rgba(221, 161, 140, 0.518);
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+input,
+button {
+  padding: 10px;
+  margin: 10px;
+  color: aliceblue;
+  cursor: pointer;
+}
+button:hover {
+  /* background-color: aliceblue; */
+  background-color: rgba(180, 147, 147, 0.779);
+  color: black;
+}
+
+.equal:hover {
+  background-color: burlywood;
+}
+button {
+  text-align: center;
+  background-color: rgba(55, 48, 48, 0.779);
+  height: 55px;
+  width: 55px;
+  font-size: larger;
+  border-radius: 50%;
+}
+
+input {
+  background-color: black;
+  height: 50px;
+  width: 90%;
+  text-align: right;
+  font-size: 20px;
+}
+
+.equal {
+  background-color: orange;
+  color: black;
+}
+
+.operator {
+  background-color: rgb(112, 29, 29);
+  color: aquamarine;
+}
+.operator:hover {
+  background-color: rgb(164, 85, 85);
+}
+
+.inp {
+  height: 70px;
+  border-bottom: 2px rgb(246, 243, 243);
+}
