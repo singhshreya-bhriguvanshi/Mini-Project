@@ -1,11 +1,7 @@
 $(document).ready(function () {
-
     const apiKey = "ddaddd18844f7bd60fff29e31d5a96f5";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
-
-    const searchBox = document.querySelector(".search input");
-    const searchBtn = document.querySelector(".search button");
-
+    let city1=localStorage.getItem("city");
 
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -30,15 +26,6 @@ $(document).ready(function () {
             document.querySelector(".weather1").style.display = "block";
         }
     }
-
-    searchBtn.addEventListener("click", () => {
-        checkWeather(searchBox.value)
-    });
-
-    searchBox.addEventListener("keypress", (e) => {
-        if (e.key === "Enter") {
-            checkWeather(searchBox.value);
-        }
-    });
+    checkWeather(city1);
 
 })

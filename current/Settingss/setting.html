@@ -68,7 +68,7 @@
       <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
       <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
       <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
-      <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+      <option value="Asia/Calcutta" selected>(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
       <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
       <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
       <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
@@ -96,7 +96,11 @@
       <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
       <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
    </select>
-    <button class="submit-btn" type="submit" onclick="saveData()">SAVE</button>
+   <div id="citySetting">
+    <label id="citySetting">ENTER YOUR CITY NAME</label>
+    <input type="text" id="city">
+   </div>
+   <button class="submit-btn" type="submit" onclick="saveData()" id="save" >SAVE</button>
   </div>
   
   </body>
