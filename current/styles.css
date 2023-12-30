@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
+
 html {
   height: 100%;
   width: 100%;
@@ -13,9 +14,8 @@ html {
   background-size: 100% 100%;
   background-attachment: fixed;
   background-image: blur(20px);
-  /* background: blur(20px); */
-  /* -webkit-filter: blur(8px); */
 }
+
 body {
   display: table-header-group;
   scrollbar-width: none;
@@ -24,12 +24,10 @@ body {
   justify-content: top;
   align-items: center;
   min-height: 100vh;
-  /* background: #666; */
   background-image: url(/images/boo-removebg-preview.png);
   background-position: center;
   background-repeat: no-repeat;
   background-position: 100vh 25vh;
-  /* background-color: #2f2d41;   */
 }
 
 .watch_welcome {
@@ -38,13 +36,9 @@ body {
 
 .welcome {
   position: absolute;
-
-  /* flex: 1; */
-  /* top: 20px; */
   margin-top: 20px;
   margin-left: 37vw;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .usernameDisplay,
@@ -57,18 +51,12 @@ body {
 }
 
 .calendar1 {
-  /* margin-top: 100px; */
   display: flex;
 }
-.calendar {
-  /* display: table-footer-group; */
-  /* position: sticky; */
-  /* margin-top: 100px; */
 
+.calendar {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-  /* align-items: center;
-  justify-content: center; */
   z-index: 1000;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -78,7 +66,6 @@ body {
   bottom: 8px;
   display: inline-block;
   width: 200px;
-  /* background: #fff; */
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
@@ -114,10 +101,10 @@ body {
   color: #fff;
 }
 /* Calendar CSS Over  */
+
 /* Icon CSS Start  */
 .wrapper {
   display: inline-flex;
-  /* position: fixed; */
 }
 .wrapper .icon {
   margin: 0 20px;
@@ -215,8 +202,8 @@ a {
   padding-top: 80vh;
 }
 /* Icon CSS Over  */
-/* To-Do CSS Start  */
 
+/* To-Do CSS Start  */
 .container {
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -232,6 +219,8 @@ a {
   margin: 30px;
   padding: 20px 30px 20px 30px;
   width: 300px;
+  max-height: 280px;
+  overflow-y: auto;
 }
 
 .input-group {
@@ -240,7 +229,6 @@ a {
   align-items: center;
   border-radius: 13px;
   box-sizing: border-box;
-  /* border: 1px solid #0f0f0f; */
   font-size: 16px;
   gap: 1px;
 }
@@ -315,6 +303,7 @@ button:hover {
   margin-right: 20px;
 }
 /* To-Do CSS Over  */
+
 /* Watch CSS Start  */
 .clock1 {
   display: flex;
@@ -336,9 +325,7 @@ button:hover {
   backdrop-filter: blur(20px);
 }
 .clock {
-  /* margin-top: 100px; */
   display: flex;
-  /* position: absolute; */
 }
 .clock h2 {
   font-size: 3em;
@@ -348,7 +335,6 @@ button:hover {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  /* margin: 0px 10px; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   padding-left: 10px;
@@ -359,21 +345,13 @@ button:hover {
   padding-top: 5px;
   align-items: center;
   justify-content: center;
-  /* font-size:large;
-  align-items:center; */
-  /* text-align: center; */
-  /* position: relative; */
-  /* margin: 0 10px; */
 }
 
-#tzone{
+#tzone {
   display: flex;
   position: absolute;
   padding-left: 144px;
   padding-bottom: 80px;
-  
- 
-
 }
 /* Time css end here  */
 
@@ -389,7 +367,6 @@ button:hover {
   backdrop-filter: blur(20px);
   position: absolute;
   top: 120px;
-  /* bottom: 8px; */
   left: 0px;
   margin: 30px;
   padding-top: 8px;
@@ -498,7 +475,6 @@ button:hover {
   margin: 0;
   padding: 0;
   font-size: x-small;
-  /* height: 80px; */
 }
 
 .city {
@@ -562,13 +538,11 @@ button:hover {
 .Settings {
   position: relative;
 }
-.Options{
+.Options {
   display: flex;
 }
-.Options{
-  
-  position:relative;
-
+.Options {
+  position: relative;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -579,10 +553,6 @@ button:hover {
   backdrop-filter: blur(20px);
   margin-left: 77vw;
   bottom: 250px;
-  /* margin-right: 20px; */
-  /* margin: auto; */
-  /* margin-top: 150px; */
-  /* width: 400px; */
   border-radius: 13px;
   overflow: hidden;
   align-items: center;
@@ -591,46 +561,24 @@ button:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
-  /* opacity: 0; */
 }
-
 
 /* quotations */
 .card {
-  display: flex;
-  padding: 10px 10px;
-  height: 85px;
-  width: 300px;
-  margin-left: 77vw;
-  top: 88vh;
-
-  right: 0;
-  /* position: relative; */
-  /* margin-bottom: 20px; */
-  /* margin-right: 20px; */
-  /* backdrop-filter: blur(16px) saturate(180%); */
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   position: absolute;
-  display: inline-flex;
-
-  /* right: 10px; */
-  /* justify-content: */
-  /* display: inline-block; */
-  scrollbar-width: none;
-  /* bottom: 8px; */
-  overflow-y: hidden;
-  /* -webkit-scrollbar {
-    display: none;
-  } */
-  /* z-index: 1000; */
-  /* margin: 30px; */
+  bottom: 0px;
+  right: 0px;
+  margin: 30px;
+  padding: 20px 30px 20px 30px;
+  width: 300px;
 }
 
 .card h2 {
@@ -641,82 +589,89 @@ button:hover {
   justify-content: center;
 }
 
-#calc{
- 
+#calc,
+#notes {
   align-items: center;
   justify-content: center;
   color: #fff;
 }
 
+.Options {
+  display: flex;
+}
+
+.Settings,
+.option-1,
+.option-2 {
+  flex: 1;
+}
 
 /* form style */
-.form-container{
-  align-items: center; 
-  margin: 200px 300px 200px 550px; 
+.form-container {
+  align-items: center;
+  margin: 200px 300px 200px 550px;
 }
 
-.user-info{
+.user-info {
   text-align: center;
-background: rgba(255,255,255,0.05);
-box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-z-index: 1000;
-border: 1px solid rgba(255,255,255,0.1);
-backdrop-filter: blur(20px) ;
-/* margin: 300px; */
-width: 400px;
-border-radius: 13px;
-overflow: hidden;
-align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  width: 400px;
+  border-radius: 13px;
+  overflow: hidden;
+  align-items: center;
 }
 
-.formbody{
+.formbody {
   align-items: center;
   background-image: none;
 }
 
-.form-heading{
+.form-heading {
   display: inline-block;
   color: white;
   font-size: 50px;
 }
 
-.username{
+.username {
   color: white;
-  /* flex: 1; */
-  /* display: inline-block; */
   gap: 1px;
   margin: 16px;
   margin-left: 20px;
   font-size: larger;
 }
 
-.input-name, .input-city{
+.input-name,
+.input-city {
   margin-top: 20px;
-  margin-bottom: 20px;   
-  display: flex;    
+  margin-bottom: 20px;
+  display: flex;
 }
 
-#userName{
+#userName {
   gap: 2px;
-  flex:1;
-  /* margin: 20px; */
+  flex: 1;
   margin-right: 30px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   border: 1px solid #0f0f0f;
   color: white;
-  font-size: 16px; 
+  font-size: 16px;
   background: transparent;
   border-radius: 13px;
   padding: 12px 20px 12px 20px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-.submit-btn{
- background: transparent;
- box-sizing: border-box;
- padding: 12px 20px 12px 30px;
- cursor: pointer;
- margin: 20px;
- border-radius: 13px;
- color: white;
+.submit-btn {
+  background: transparent;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 30px;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 13px;
+  color: white;
 }
+/* form style ends */

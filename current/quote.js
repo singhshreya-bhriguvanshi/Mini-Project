@@ -18,7 +18,7 @@ var quotes = [
 var c = 1;
 var len = quotes.length;
 var a = document.querySelector("#quotation");
-console.log(a);
+// console.log(a);
 // a.addEventListener("click", function () {
 // if (c == 4) {
 //     c = 0;
