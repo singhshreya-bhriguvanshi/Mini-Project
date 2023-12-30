@@ -28,6 +28,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-position: 100vh 25vh;
+  overflow: hidden;
 }
 
 .watch_welcome {
@@ -61,7 +62,7 @@ body {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
-  margin: 30px;
+  margin-left: 30px;
   position: absolute;
   bottom: 8px;
   display: inline-block;
@@ -394,7 +395,7 @@ button:hover {
   padding-bottom: 10px;
 }
 
-.search {
+/* .search {
   width: 90%;
   display: flex;
   align-items: center;
@@ -402,17 +403,17 @@ button:hover {
   gap: 2px;
   margin: auto;
   margin-bottom: 10px;
-}
+} */
 
-.input-box i {
+/* .input-box i {
   flex: 0.1;
   font-size: 16px;
   padding: 3px 5px 3px 5px;
   width: 5px;
   align-items: center;
-}
+} */
 
-.search input {
+/* .search input {
   flex: 1;
   display: inline-block;
   color: white;
@@ -424,9 +425,9 @@ button:hover {
   align-items: center;
   padding: 0;
   border-radius: 0%;
-}
+} */
 
-.input-box {
+/* .input-box {
   flex: 1;
   display: flex;
   box-sizing: border-box;
@@ -434,9 +435,9 @@ button:hover {
   background: transparent;
   border-radius: 13px;
   padding: 8px 10px 8px 1px;
-}
+} */
 
-.search button {
+/* .search button {
   background: transparent;
   color: rgba(255, 255, 255);
   box-sizing: border-box;
@@ -455,7 +456,7 @@ button:hover {
   text-transform: capitalize;
   color: rgb(255, 255, 255, 0.7);
   font-size: 16px;
-}
+} */
 
 .details {
   display: flex;
@@ -537,6 +538,7 @@ button:hover {
 
 .Settings {
   position: relative;
+  color: #fff;
 }
 .Options {
   display: flex;
@@ -563,8 +565,10 @@ button:hover {
   color: #fff;
 }
 
+
 /* quotations */
 .card {
+  height: 150px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -574,9 +578,9 @@ button:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   right: 0px;
-  margin: 30px;
+  margin-right: 30px;
   padding: 20px 30px 20px 30px;
   width: 300px;
 }

@@ -36,3 +36,6 @@ border-radius: 13px;
 overflow: hidden;
 align-items: center;
 }
+#citySetting {
+  display: block;
+}
