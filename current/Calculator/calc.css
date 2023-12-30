@@ -82,3 +82,27 @@ input {
   height: 70px;
   border-bottom: 2px rgb(246, 243, 243);
 }
+
+.cross {
+  height: 50px;
+  width: 100%;
+  /* background-color: rgb(151, 151, 229); */
+  top: 0;
+  color: #fff;
+  position: absolute;
+  padding-left: 94%;
+}
+
+.cross .btn {
+  /* height: 40px;
+  width: 40px; */
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+}
+
+.cross .btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
