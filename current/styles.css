@@ -64,7 +64,7 @@ body {
   backdrop-filter: blur(20px);
   margin-left: 30px;
   position: absolute;
-  bottom: 8px;
+  bottom: 50px;
   display: inline-block;
   width: 200px;
   text-align: center;

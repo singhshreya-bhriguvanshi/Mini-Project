@@ -2,6 +2,11 @@ $(document).ready(function () {
     const apiKey = "ddaddd18844f7bd60fff29e31d5a96f5";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     let city1=localStorage.getItem("city");
+    
+    // const searchBox = document.querySelector(".search input");
+    // console.log(searchBox);
+    // const searchBtn = document.querySelector(".search button");
+    // console.log(searchBtn);
 
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -27,5 +32,6 @@ $(document).ready(function () {
         }
     }
     checkWeather(city1);
+
 
 })

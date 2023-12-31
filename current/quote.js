@@ -32,7 +32,7 @@ function change() {
   if (c == len) {
     c = 0;
   }
-  console.log(quotes[c]);
+  // console.log(quotes[c]);
   a.innerHTML = '"' + quotes[c] + '"';
   c++;
 }
