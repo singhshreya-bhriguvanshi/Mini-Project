@@ -59,3 +59,9 @@ st.addEventListener("click", function () {
   timeInterval();
   st.style.display = "none";
 });
+
+var e = document.querySelector("#end");
+console.log(end);
+end.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
