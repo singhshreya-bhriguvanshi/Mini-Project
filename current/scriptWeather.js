@@ -1,6 +1,7 @@
 $(document).ready(function () {
     const apiKey = "ddaddd18844f7bd60fff29e31d5a96f5";
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    
     let city1=localStorage.getItem("city");
     
     // const searchBox = document.querySelector(".search input");
@@ -30,7 +31,11 @@ $(document).ready(function () {
             document.querySelector(".error").style.display = "none";
             document.querySelector(".weather1").style.display = "block";
         }
+    
     }
+    if(city1=="")
+    checkWeather("Delhi");
+else
     checkWeather(city1);
 
 
