@@ -10,13 +10,18 @@ body {
 }
 
 #back {
-  height: calc(100% - 50px);
+  height: 100%;
   width: 100%;
-  background-color: rgb(151, 151, 229);
+  background-image: url("earth-sunrise-6016x3889-12523.jpg");
   position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: blur(20px);
   /* padding: 12.5% 12.5%; */
 }
 
@@ -74,6 +79,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding: 10px 0;
+  color: rgb(12, 12, 12);
   /* background-color: black; */
 }
 .dayss div {
@@ -91,12 +97,12 @@ p {
 }
 
 .today {
-  background-color: rgb(109, 91, 226);
-  color: rgb(31, 67, 5);
+  background-color: rgba(0, 30, 255, 0.456);
+  color: rgb(0, 0, 0);
 }
 
 .grey {
-  color: #ad1e1ee4;
+  color: #f4c804e4;
 }
 .grey:hover {
   cursor: default;
@@ -134,17 +140,45 @@ p {
 .cross {
   height: 50px;
   width: 100%;
-  background-color: rgb(151, 151, 229);
+  /* background-color: rgb(151, 151, 229); */
+  top: 0;
   color: #fff;
+  position: absolute;
+  cursor: pointer;
   padding-left: 94%;
 }
 
-.btn {
+.cross .btn {
   /* height: 40px;
   width: 40px; */
   padding: 12px 16px;
   font-size: 16px;
+  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1); /* Blue background */
   border: none; /* Remove borders */
   color: white; /* White text */
+}
+
+.cross .btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#input-field {
+  width: 50px;
+  font-weight: 600;
+  background-color: rgba(119, 202, 244, 0.5);
+  padding: 3px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.align {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+#date_str {
+  cursor: pointer;
 }
