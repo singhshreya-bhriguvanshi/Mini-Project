@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 let date =new  Date();
-console.log(date)
-let month=date.getUTCMonth()
-console.log(month)
+// console.log(date);
+let month=date.getMonth()
+// console.log(month);
 let arrMonth = [
         "Jan",
         "Feb",

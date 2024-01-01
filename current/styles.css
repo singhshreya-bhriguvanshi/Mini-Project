@@ -536,13 +536,10 @@ button:hover {
 
 /* weather css ends*/
 
-.Settings {
+/* .Settings {
   position: relative;
   color: #fff;
-}
-.Options {
-  display: flex;
-}
+} */
 .Options {
   position: relative;
   text-align: center;
@@ -591,9 +588,9 @@ button:hover {
   color: #fff;
   justify-content: center;
 }
-
+/* Options  */
 #calc,
-#notes {
+#notes,#converter {
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -606,10 +603,16 @@ button:hover {
 .Settings,
 .option-1,
 .option-2,
-.option-3 {
+.option-3,.option-4 {
   flex: 1;
 }
+#converter{
+  height: 200px;
+  width: 200px;
+  
 
+}
+/* options style end  */
 /* form style */
 .form-container {
   align-items: center;
