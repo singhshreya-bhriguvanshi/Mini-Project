@@ -55,9 +55,46 @@
     >
       Life Sucks! Atleast you have an organised workspace.
     </h1>
-    <a href="Ful-cal.html">
+
+    <div class="welcome">
+      <h1 class="usernameDisplay">
+        Welcome <span id="usernamedisplay"></span>!
+      </h1>
+    </div>
+
+    <!-- form
+    <div class="form-container">
+      <div class="user-info">
+        <h1 class="form-heading">Welcome to the Smart Desk!!</h1>
+        <form id="user-details">
+          <div class="input-name">
+            <label class="username" for="userName">Name:</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="input-city">
+            <label class="cityname" for="cityName">City:</label>
+            <input
+              type="text"
+              id="cityName"
+              placeholder="Enter city name"
+              required
+            />
+          </div>
+          <button onclick="submitForm()" class="submit-btn" type="submit">Continue</button>
+        </form>
+      </div>
+    </div>
+    <script src="scriptWeather.js"></script>
+    <script src="script.js"></script> -->
+
+<!-- Calender -->
     <div class="calendar1">
-      <!-- Calender -->
+      <a href="Ful-cal.html">
         <div class="calendar">
           <h2 id="Month1"></h2>
           <h2 id="Day1"></h2>
@@ -80,12 +117,8 @@
     <script src="scriptToDo.js"></script>
     <!-- To-do List End -->
     <!-- welcome tag begins here  -->
-    <div class="watch_welcome">
-      <div class="welcome">
-        <h1 class="usernameDisplay">
-          Welcome <span id="usernamedisplay"></span>!
-        </h1>
-      </div>
+  
+      
       <!-- Welcome tag ends here  -->
       <!-- Watch  -->
       <script src="scriptWatch.js"></script>
@@ -94,29 +127,15 @@
           <h2 id="timeHour"></h2>
           <h2 class="dot">:</h2>
           <h2 id="timeMin"></h2>
-          <!-- <h2 class="dot">:</h2>
-            <h2 id="timeSec"></h2> -->
           <h2 id="ampm"></h2>
         </div>
         <p id="tzone">IST</p>
       </div>
-    </div>
 
     <!-- Weather -->
     <div class="weather-card">
       <div class="weather">
         <h1>WEATHER</h1>
-        <!-- <div class="search">
-          <div class="input-box">
-            <i class="bx bxs-map"></i>
-            <input
-              type="text"
-              placeholder="Enter city name"
-              spellcheck="false"
-            />
-          </div>
-          <button><i class="fa fa-search"></i></button>
-        </div> -->
         <div class="error">
           <p>Invalid city name</p>
         </div>
@@ -182,6 +201,14 @@
     </div>
     <!-- LINKS End Here  -->
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <iframe id="appIframe" src="notes.html" frameborder="0">
+        </iframe>
+        <span class="close" onclick="closeNotes()">&times;</span>
+      </div>
+    </div>
+
     <!-- quote -->
     <div class="card" style="color: white">
       <h2 id="quotation">
@@ -190,6 +217,9 @@
     </div>
     <script src="quote.js"></script>
     <!-- quotes over -->
+
+
+
     <!-- options start  -->
     <div class="Options">
       <div class="Settings">
@@ -203,10 +233,10 @@
         </a>
       </div>
       <div class="option-2">
-        <a href=""
-          ><span id="notes"><i class="gg-notes"></i></span>
-        </a>
+        <button onclick="openNotes()"><i class="fa fa-sticky-note-o"></i></button>
+        
       </div>
+      <script src="scriptnotes.js"></script>
       <div class="option-3">
         <a href="game.html"
           ><span id="notes"><i class="fas fa-gamepad"></i></span>

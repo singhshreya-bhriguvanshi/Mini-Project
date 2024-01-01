@@ -3,11 +3,6 @@ $(document).ready(function () {
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     
     let city1=localStorage.getItem("city");
-    
-    // const searchBox = document.querySelector(".search input");
-    // console.log(searchBox);
-    // const searchBtn = document.querySelector(".search button");
-    // console.log(searchBtn);
 
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
@@ -21,8 +16,7 @@ $(document).ready(function () {
         else {
             document.querySelector(".city").innerHTML = data.name;
             document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + " °C";
-            document.querySelector(".description").innerHTML = " ("+data.weather[0].description+")";
-            // document.querySelector(".temp_feel").innerHTML=Math.round(data.main.feels_like)+" °C";  
+            document.querySelector(".description").innerHTML = " ("+data.weather[0].description+")";  
             document.querySelector(".humidity").innerHTML = data.main.humidity + " %";
             document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
