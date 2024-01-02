@@ -1,3 +1,16 @@
+function openCalc() {
+  var modal = document.getElementById("myModal");
+  var iframe = document.getElementById("appIframe");
+  iframe.src = "Calculator/calc.html"; 
+  modal.style.display = "block";
+}
+
+function closeCalc() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+
 let input = document.querySelector("#input-box");
 let buttons = document.querySelectorAll("button");
 let str = "";

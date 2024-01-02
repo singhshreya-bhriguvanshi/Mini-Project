@@ -1,3 +1,15 @@
+function openCurrency() {
+	var modal = document.getElementById("myModal");
+	var iframe = document.getElementById("appIframe");
+	iframe.src = "Currency Converter/Converter.html"; 
+	modal.style.display = "block";
+  }
+  
+  function closeCurrency() {
+	var modal = document.getElementById("myModal");
+	modal.style.display = "none";
+  }
+
 var select = document.querySelectorAll(".currency"),
 input_currency = document.getElementById('input_currency'),
 output_currency = document.getElementById('output_currency');

@@ -1,3 +1,15 @@
+function openGame() {
+	var modal = document.getElementById("myModal");
+	var iframe = document.getElementById("appIframe");
+	iframe.src = "Bubble Game/game.html"; 
+	modal.style.display = "block";
+  }
+  
+  function closeGame() {
+	var modal = document.getElementById("myModal");
+	modal.style.display = "none";
+  }
+
 var hit,
   s = 0,
   flag = 0;
