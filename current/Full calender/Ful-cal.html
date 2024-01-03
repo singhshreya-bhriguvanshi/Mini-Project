@@ -13,25 +13,21 @@
   <body  onload="renderDate()">
     
     <div id="back">
-      <div class="cross">
-      <button class="btn"  id="end"><i class="fa fa-close"></i></button>
-    </div>
-    <div id="main-cal">
+      <div id="main-cal">
         <div class="top-cal">
-            <div class="prev" onclick="moveDate('prev')">
-                <span>&#10094</span>
+          <div class="prev" onclick="moveDate('prev')">
+              <span>&#10094</span>
+          </div>
+          <div class="mont">
+            <h2 id="mon-name">December</h2>
+            <p id="date_str" style="color:black"></p>
+            <div class="align">
+              <input type="text" id="input-field" style="display: none;" placeholder="YYYY">
             </div>
-            <div class="mont">
-                <h2 id="mon-name">December</h2>
-                <p id="date_str" style="color:black"></p>
-                <div class="align">
-
-                  <input type="text" id="input-field" style="display: none;" placeholder="YYYY">
-                </div>
-            </div>
-            <div class="next" onclick="moveDate('next')">
-                <span>&#10095</span>
-            </div>
+          </div>
+          <div class="next" onclick="moveDate('next')">
+            <span>&#10095</span>
+          </div>
         </div>
         <div class="week">
             <div>Sun</div>

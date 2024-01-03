@@ -21,8 +21,8 @@ body {
 }
 
 #space {
-  height: 80%;
-  width: 70%;
+  height: 100%;
+  width: 90%;
   border-radius: 10px;
 
   background-color: rgba(0, 0, 0, 0.2);
@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: #e7dbdb59;
   flex-wrap: wrap;
 }
@@ -87,11 +87,9 @@ body {
   /* background-color: rgb(16, 69, 16); */
 }
 
-button {
-  background-color: rgb(68, 171, 68);
-  color: #2d33ec;
-  font-size: 72px;
-  font-weight: 800;
+#Strt {
+  background-color: rgb(46, 78, 185);
+  font-size: 62px;
   border-radius: 10px;
   position: absolute;
   padding: 10px 20px;

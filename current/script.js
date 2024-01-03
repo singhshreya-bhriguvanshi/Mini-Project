@@ -1,3 +1,17 @@
+function openCal() {
+  var modal = document.getElementById("myModal");
+  var iframe = document.getElementById("appIframe");
+  iframe.src = "Full calender/Ful-cal.html"; 
+  modal.style.display = "block";
+}
+
+function closeCal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const userName = localStorage.getItem('userName');
