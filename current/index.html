@@ -64,15 +64,23 @@
     </div>
 
     <!-- Calender -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <iframe id="appIframe" src="Full calender/Ful-cal.html" frameborder="0"> </iframe>
+        <span class="close" onclick="closeCal()">&times;</span>
+      </div>
+    </div>
     <div class="calendar1">
-      <a href="/current/Full calender/Ful-cal.html">
-        <div class="calendar">
+      <button class="option-btn" onclick="openCal()"><div class="calendar">
           <h2 id="Month1"></h2>
           <h2 id="Day1"></h2>
           <h2 id="date1"></h2>
           <h2 id="Year1"></h2>
         </div>
-      </a>
+      </button>
+      <!-- <a href="/current/Full calender/Ful-cal.html"> -->
+        
+      <!-- </a> -->
     </div>
     <script src="script.js"></script>
     <!-- Calender End -->
@@ -182,6 +190,7 @@
     <script src="quote.js"></script>
     <!-- quotes over -->
 
+<!-- options start  -->
 <div id="myModal" class="modal">
       <div class="modal-content">
         <iframe id="appIframe" src="notes.html" frameborder="0"> </iframe>
@@ -205,7 +214,7 @@
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <iframe id="appIframe" src="Currency Converter/Converter.html" frameborder="0"> </iframe>
+        <iframe id="appIcframe" src="Currency Converter/Converter.html" frameborder="0"> </iframe>
         <span class="close" onclick="closeCurrency()">&times;</span>
       </div>
     </div>
@@ -217,11 +226,11 @@
       </div>
     </div>
 
-    <!-- options start  -->
+    
     <div class="Options">
       <div class="Settings">
-        <button onclick="openSetting()">
-          <i class="fa-solid fa-gear"></i>
+        <button class="option-btn" onclick="openSetting()">
+          <i class="optI fa-solid fa-gear"></i>
         </button>
         <!-- <a href="Settingss/setting.html"
           ><span id="gear"><i class="fa-solid fa-gear"></i></span
@@ -229,8 +238,8 @@
       </div>
       <script src="Settingss/scriptSetting.js"></script>
       <div class="option-1">
-        <button onclick="openCalc()">
-          <i class="fa-solid fa-calculator"></i>
+        <button class="option-btn" onclick="openCalc()">
+          <i class="optI fa-solid fa-calculator"></i>
         </button>
         <!-- <a href="/current/Calculator/calc.html"
           ><span id="calc"><i class="fa-solid fa-calculator"></i></span>
@@ -238,14 +247,14 @@
       </div>
       <script src="Calculator/calc.js"></script>
       <div class="option-2">
-        <button onclick="openNotes()">
-          <i class="fa fa-sticky-note-o"></i>
+        <button class="option-btn" onclick="openNotes()">
+          <i class="optI fas fa-sticky-note"></i>
         </button>
       </div>
       <script src="scriptnotes.js"></script>
       <div class="option-4">
-        <button onclick="openCurrency()">
-          <i class="fa-solid fa-dollar-sign"></i>
+        <button class="option-btn" onclick="openCurrency()">
+          <i class="optI fa-solid fa-dollar-sign"></i>
         </button>
         <!-- <a href="/current/Currency Converter/Converter.html">
           <span id="converter"><i class="fa-solid fa-dollar-sign"></i></span>
@@ -254,8 +263,8 @@
       <script src="Currency Converter/Converter.js"></script>
 
       <div class="option-3">
-        <button onclick="openGame()">
-          <i class="fas fa-gamepad"></i>
+        <button class="option-btn" onclick="openGame()">
+          <i class="optI fas fa-gamepad"></i>
         </button>
         <!-- <a href="/current/Bubble Game/game.html"
           ><span id="notes"><i class="fas fa-gamepad"></i></span>
