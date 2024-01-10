@@ -1,4 +1,4 @@
-html{
+html {
   /* background-color: aqua;
   background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100'); */
   background-position: center;
@@ -12,31 +12,49 @@ html{
 label {
   color: white;
 }
-h1{
+h1 {
   font-size: 50px;
   /* justify-content: center; */
   position: relative;
   color: white;
-  margin-left: 4  0vw;
+  margin-left: 4 0vw;
   /* align-items: center; */
-
 }
 
-#setting{
-  
+#setting {
   text-align: center;
-background: rgba(255,255,255,0.05);
-box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-z-index: 1000;
-border: 1px solid rgba(255,255,255,0.1);
-backdrop-filter: blur(20px) ;
-margin: auto;
-margin-top: 150px;
-width: 400px;
-border-radius: 13px;
-overflow: hidden;
-align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  margin: auto;
+  margin-top: 150px;
+  width: 400px;
+  border-radius: 13px;
+  overflow: hidden;
+  align-items: center;
 }
-#citySetting {
+#citySetting,
+#timezone-offset {
   display: block;
+  font-size: 20px;
+}
+
+#timezone,
+#city {
+  width: 370px;
+  margin: 0 10px 10px 10px;
+  height: 30px;
+}
+
+#save {
+  height: 25px;
+  margin: 10px;
+  font-size: 18px;
+  padding: 10px 15px 25px 15px;
+}
+
+#save:hover {
+  cursor: pointer;
 }
