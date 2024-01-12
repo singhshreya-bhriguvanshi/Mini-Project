@@ -8,7 +8,7 @@
 html {
   height: 100%;
   width: 100%;
-  background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/801/764/23/abstract-hexagon-3d-wallpaper-preview.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -24,10 +24,10 @@ body {
   justify-content: top;
   align-items: center;
   min-height: 100vh;
-  background-image: url(/images/boo-removebg-preview.png);
+  background-image: url(https://media.giphy.com/media/hGlG5YU7yvNg6rQbEJ/giphy.gif);
   background-position: center;
   background-repeat: no-repeat;
-  background-position: 100vh 25vh;
+  background-position: 33vw 18vh;
   overflow: hidden;
 }
 

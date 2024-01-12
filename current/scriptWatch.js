@@ -1,8 +1,8 @@
 // let time =new Date();
 let tz = localStorage.getItem("timezone");
-console.log(date1);
-console.log(typeof (tz));
-console.log(tz);
+// console.log(date1);
+// console.log(typeof (tz));
+// console.log(tz);
 // console.log(typeof(tz))
 
 
@@ -10,12 +10,12 @@ function update() {
   let time = new Date().toLocaleString("en-US", { timeZone: tz });
   let date1 = new Date(time);
   let date2 = new Date();
-  console.log(date2);
+  // console.log(date2);
   document.getElementById("tzone").innerHTML=tz;
   document.getElementById("timeHour").innerHTML = date1.getHours();
   document.getElementById("timeMin").innerHTML = date1.getMinutes();
   let sec2=date1.getSeconds();
-  console.log(sec2);
+  // console.log(sec2);
   
   let hour2 = date1.getHours();
   // console.log(hour2);
