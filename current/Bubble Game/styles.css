@@ -33,7 +33,7 @@ body {
   height: 100px;
   width: 100%;
   display: flex;
-  background-color: rgba(30, 64, 30, 0.286);
+  background-color: rgba(63, 126, 221, 0.4);
   padding: 30px;
   justify-content: space-around;
   align-items: center;
@@ -71,7 +71,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: rgba(215, 154, 10, 0.533);
+  background-color: rgba(218, 104, 60, 0.533);
   display: flex;
   margin: 5px;
   align-items: center;
@@ -83,12 +83,12 @@ body {
 }
 
 .bubble:hover {
-  background-color: rgba(53, 38, 2, 0.8);
+  background-color: rgba(165, 15, 15, 0.8);
   /* background-color: rgb(16, 69, 16); */
 }
 
 #Strt {
-  background-color: rgb(46, 78, 185);
+  background-color: rgba(63, 126, 221, 0.4);
   font-size: 62px;
   border-radius: 10px;
   position: absolute;

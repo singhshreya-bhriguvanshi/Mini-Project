@@ -16,7 +16,7 @@ var hit,
 var timer = 60;
 function makeBubble() {
   var str = "";
-  for (var i = 1; i <= 168; i++) {
+  for (var i = 1; i <= 117; i++) {
     str += `<div class="bubble">${Math.floor(Math.random() * 20)}</div>`;
   }
   document.querySelector("#btm").innerHTML = str;
