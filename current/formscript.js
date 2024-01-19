@@ -5,7 +5,7 @@ $(document).ready(function(){
         const userName = document.getElementById('userName').value;
         localStorage.setItem('userName', userName);
     
-        window.location.href = 'index.html';
+        window.location.href = 'mainpage.html';
     });
     
 })
