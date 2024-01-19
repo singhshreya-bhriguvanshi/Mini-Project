@@ -21,31 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         usernamedisplay.textContent = userName;
     }
 
-  // form
-  // document.querySelector("form").addEventListener("submit", function (event) {
-  //   event.preventDefault();
-
-  //   var userName = document.getElementById("userName").value;
-  //   var cityName = document.getElementById("cityName").value;
-
-  //   if (userName.trim() !== "" && cityName.trim() !== "") {
-  //     var formContainer = document.querySelector('.form-container');
-  //     formContainer.style.display = "none";
-
-  //     const usernameDisplay = document.getElementById('usernamedisplay');
-  //     if (userName) {
-  //       usernamedisplay.textContent = userName;
-  //     }
-  //   }
-  // });
-
-  
-  // let  cityLoc1 =document.getElementById("cityName").value;
-  // localStorage.setItem("city",cityLoc1);
-
-
-  // calender
-
 });
 
 
@@ -75,5 +50,4 @@ let arrDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 document.getElementById("Day1").innerHTML=arrDay[day];
 let year=date.getFullYear();
 document.getElementById("Year1").innerHTML=year;
-// document.getElementById("btn").innerHTML
 
