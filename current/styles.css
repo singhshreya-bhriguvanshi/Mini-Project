@@ -777,3 +777,11 @@ button:hover {
   text-decoration: none;
   cursor: pointer;
 }
+#msg{
+        color: white;
+        text-align: center;
+        text-align-last: right;
+        position: absolute;
+        padding-left: 25vw;
+        padding-top: 55vh;
+}

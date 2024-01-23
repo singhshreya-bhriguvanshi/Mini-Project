@@ -3,7 +3,7 @@ $(document).ready(function () {
     const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
     
     let city1=localStorage.getItem("city");
-
+    console.log(typeof(city1));
     async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
         var data = await response.json();
@@ -28,8 +28,10 @@ $(document).ready(function () {
     
     }
     checkWeather("Delhi");
-    if(city1=="")
+    if(typeof city1 === "string" && city1.length === 0)
     checkWeather("Delhi");
+else if(city1 === null)
+checkWeather("Delhi");
 else
     checkWeather(city1);
 

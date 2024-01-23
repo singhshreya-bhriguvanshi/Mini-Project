@@ -8,7 +8,13 @@ let tz = localStorage.getItem("timezone");
 
 
 function update() {
-  if(tz==""){
+  if(typeof tz === "string" && tz.length === 0){
+    let date2 = new Date();
+    let sec3=date2.getSeconds();
+document.getElementById("timeHour").innerHTML = date2.getHours();
+document.getElementById("timeMin").innerHTML = date2.getMinutes();
+  }
+  else if(tz === null){
     let date2 = new Date();
     let sec3=date2.getSeconds();
 document.getElementById("timeHour").innerHTML = date2.getHours();
