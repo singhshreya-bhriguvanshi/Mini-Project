@@ -6,10 +6,15 @@ let tz = localStorage.getItem("timezone");
 // console.log(typeof(tz))
 
 
+
 function update() {
+  if(tz==""){
+    let date2 = new Date();
+document.getElementById("timeHour").innerHTML = date2.getHours();
+document.getElementById("timeMin").innerHTML = date2.getMinutes();
+  }
   let time = new Date().toLocaleString("en-US", { timeZone: tz });
   let date1 = new Date(time);
-  let date2 = new Date();
   // console.log(date2);
   document.getElementById("tzone").innerHTML=tz;
   document.getElementById("timeHour").innerHTML = date1.getHours();

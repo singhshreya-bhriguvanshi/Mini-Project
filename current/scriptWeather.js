@@ -27,6 +27,7 @@ $(document).ready(function () {
         }
     
     }
+    checkWeather("Delhi");
     if(city1=="")
     checkWeather("Delhi");
 else
